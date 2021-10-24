@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDo app</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./todo.css">
+</head>
+
+<body>
+    <main>
+        <div id="edit-modal">
+            <input id="edit" type="text"><button id="edit-button-modal">edit</button>
+            <button id="close-button">x</button>
+        </div>
+        <div class="mainContainer">
+            <h2>Todo List</h2>
+            <div class="inputField">
+                <input id="inputBox" type="text" placeholder="add your todo">
+                <button id="add-button">+</button>
+            </div>
+            <div class="ulList">
+                <ul id="to-do-list" style="list-style: none; padding-left: 0;">
+                    <li>
+                        <span></span>
+                            <button class="delete-button">Delete</button>
+                            <button class="edit-button">Edit</button>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div id="to-do-pending-section">
+                <p>Todos pending: <span id="todos-pending">0</span></p>
+                <button id="delete-all-button">Delete all</button>
+        </div>
+    </main>
+
+    <script src="./todo.js"></script>
+</body>
+
+</html>

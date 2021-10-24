@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%); 
+    overflow: hidden;
+}
+
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    max-height: 350px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10%;
+}
+
+.inputField {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#inputBox {
+    width: 80%;
+}
+
+#to-do-list {
+    visibility: hidden;
+}
+
+.ulList{
+    width: 100%;
+    overflow: auto;
+}
+
+li {
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    background: rgba(14, 178, 228, 0.5);
+    margin-top: 2px;
+}
+
+#to-do-pending-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#edit-modal{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(141, 101, 182);
+    border-radius: 10px;
+    position: absolute;
+    left:auto;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#edit {
+    border-radius: 5px;
+    border: none;
+}
+
+/*button styles*/
+
+#edit-button-modal {
+    margin: 2px;
+    width: 60px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#edit-button-modal:hover {
+    transform: scale(1.05);
+}
+
+#close-button {
+    border-radius:50% ;
+    height: 20px ;
+    width: 20px ;
+    background-color: rgb(228, 30, 30);
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    border: none;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#add-button{
+    width: 50px;
+    height: 40px;
+    font-size: 2rem;
+    background:rgb(141, 101, 182);
+    border: none;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-button, 
+.edit-button{
+    width: 60px;
+    background: rgb(141, 101, 182);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+#delete-all-button {
+    height: 30px;
+    font-size: 1rem;
+    background:rgb(228, 30, 30);
+    border: none;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
